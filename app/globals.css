@@ -36,19 +36,28 @@ body {
   --swiper-navigation-size: 20px;
 }
 .swiper img {
-  width: 85px;
-  height: 60px;
-  transition: width 0.08s ease, height 0.08s ease;
+  transition: transform 0.2s ease;
+}
+
+.swiper h2 {
+  position: absolute;
+  top: 50%;
 }
 
 .swiper img:hover {
-  width: 89px;
-  height: 64px;
+  transform: scale(1.2); /* Scale up the image on hover */
 }
 
-.swiper-button-prev:after,
 .swiper-button-next:after {
+  padding-left: 18px;
+  text-shadow: 1px 1px 3px #000000;
+  padding-bottom: 35px;
+}
+
+.swiper-button-prev:after {
+  padding-right: 20px;
   text-shadow: 2px 2px 4px #000000;
+  padding-bottom: 35px;
 }
 
 .swiper h2 {
@@ -59,7 +68,40 @@ body {
   text-align: center;
 }
 
+/* default screen */
+@media only screen and (max-width: 639px) {
+  .swiper img {
+    width: 95px;
+    height: 70px;
+    transition: width 0.08s ease, height 0.08s ease;
+  }
+
+  .swiper {
+    width: 118%;
+    height: 130px;
+    overflow: hidden;
+  }
+
+  .swiper h2 {
+    position: absolute;
+    top: 40%;
+  }
+}
+/* small screen */
 @media only screen and (min-width: 640px) {
+  .swiper h2 {
+    position: absolute;
+    top: 60%;
+  }
+}
+
+/* medium screen*/
+@media only screen and (min-width: 769px) {
+  .swiper {
+    width: 90%;
+    height: 130px;
+  }
+
   .swiper-slide:first-child {
     transition: transform 100ms;
   }
@@ -67,7 +109,6 @@ body {
   .swiper-slide.swiper-slide-active:first-child {
     z-index: 2;
   }
-  /*  */
 
   .swiper-slide:nth-child(2) {
     transition: transform 100ms;
@@ -89,16 +130,17 @@ body {
     width: 7px;
     height: 7px;
   }
-}
-@media only screen and (max-width: 639px) {
-  .swiper img {
-    width: 95px;
-    height: 70px;
-    transition: width 0.08s ease, height 0.08s ease;
-  }
 
-  .swiper {
-    width: 118%;
-    height: 130px;
+  .swiper h2 {
+    position: absolute;
+    top: 40%;
+  }
+}
+
+/* large screens */
+@media only screen and (min-width: 1024px) {
+  .swiper h2 {
+    position: absolute;
+    top: 50%;
   }
 }

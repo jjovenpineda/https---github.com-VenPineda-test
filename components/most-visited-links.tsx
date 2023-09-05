@@ -7,7 +7,7 @@ const mostVisitedLinks = () => {
   return (
     <div>
       <section className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-8 bg-[#ffffff] m-4 lg:m-10 sm:m-4">
-        <h1 className="text-[#000000] lg:col-span-3 sm:col-span-1 flex font-bold text-xl gap-2 ">
+        <h1 className="text-[#000000] font-['Gilroy'] lg:col-span-3 md:col-span-2 sm:col-span-2 flex font-bold text-xl gap-2 ">
           Most Visited Links
         </h1>
         <div className="max-w-xs flex flex-col gap-1.5 ">
@@ -25,7 +25,7 @@ const mostVisitedLinks = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-1.5 ">
+        <div className="flex flex-col gap-1.5">
           <Link href="#" className="--title">
             Register and Apply Online for NBI Clearance
           </Link>
@@ -45,9 +45,9 @@ const mostVisitedLinks = () => {
             Register as SSS Member
           </Link>
 
-          <a className="text-[#6B7280] text-xs ">
+          <p className="text-[#6B7280] text-xs break-words">
             https://www.sss.gov.ph/sss/appmanager/viewArticle.jsp?...
-          </a>
+          </p>
 
           <div className="--tag-action">
             <GiPlainCircle className="h-[6px] w-[6px] " />
@@ -85,11 +85,11 @@ const mostVisitedLinks = () => {
         </div>
 
         <div className="flex flex-col gap-1.5">
-          <Link href="#" className="--title">
+          <Link href="#" className="--title ">
             Request for a Birth Certificate via PSA Serbilis
           </Link>
 
-          <a className="text-[#6B7280] text-xs">
+          <a className="text-[#6B7280] text-xs break-words">
             https://www.psaserbilis.com.ph/Census/BirthCertificate
           </a>
 
@@ -101,7 +101,8 @@ const mostVisitedLinks = () => {
 
         <Link
           href="#"
-          className="text-[#3B82F6]  flex justify-center items-center text-sm gap-2 lg:col-span-3 sm:col-span-1">
+          className="text-[#3B82F6]  flex justify-center items-center text-sm gap-2 lg:col-span-3 md:col-span-2 sm:col-span-2"
+        >
           See full list of Services from A-Z
           <BsArrowLeft className="rotate-180" />
         </Link>

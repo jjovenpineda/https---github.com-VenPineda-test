@@ -7,16 +7,17 @@ const visitorFeedback = () => {
   return (
     <div>
       {" "}
-      <section className="grid grid-cols-1 sm:grid-cols-2">
+      <section className="grid grid-cols-1 md:grid-cols-2 ">
         <Image
           className=" h-full object-cover"
           src={eParticipationImage}
-          alt="e Participation image"></Image>
+          alt="e Participation image"
+        ></Image>
         <div className="   w-full bg-[#469ce5] p-4 sm:p-10 ">
           <h2 className="text-[#0E3467] text-sm font-normal ">
             Help us Improve the GOVPH
           </h2>
-          <h1 className="text-[#0E3467] text-4xl font-black">
+          <h1 className="text-[#0E3467] text-3xl font-bold font-['Gilroy']">
             e-Participation in the Philippines
           </h1>
           <p className="text-md font-normal text-[#0E3467] max-w-[580px] max-h-min pt-6">
